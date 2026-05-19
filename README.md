@@ -11,7 +11,39 @@ The following Python packages are required:
 * `numpy`
 * `ml_collections`
 
-You can download the pre-trained model weights from Google Drive: [Download Weights](https://drive.google.com/drive/folders/1RnKpKtaqu0QcphJeTctckxpsVmujR20A?usp=drive_link), and place them in the `weights` folder.
+## Pre-trained Weights
+Download the pre-trained model weights from Google Drive: [Download Weights](https://drive.google.com/drive/folders/1RnKpKtaqu0QcphJeTctckxpsVmujR20A?usp=drive_link). After downloading, place the weight files in the `weights/` directory so that the final project structure looks like this:
+```text
+InvDNA
+├── config.py
+├── dataset.py
+├── LICENSE
+├── model.py
+├── modules.py
+├── prediction.py
+├── README.md
+├── structure_module.py
+├── __init__.py
+│
+├── example
+│   ├── test.fasta
+│   └── test.pdb
+│
+├── np
+│   ├── residue_constants.py
+│   ├── stereo_chemical_props_rna.txt
+│   └── __init__.py
+│
+├── utils
+│   ├── rigid_utils.py
+│   ├── seq_utils.py
+│   ├── to_pdb.py
+│   └── __init__.py
+│
+└── weights
+    ├── all_atom.pt
+    └── seq_design.pt
+```
 
 ## Input Parameters
 
